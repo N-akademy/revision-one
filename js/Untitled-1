@@ -1,0 +1,168 @@
+// let fruits = "citron";
+// if (fruits.toLowerCase()=="citron") {
+//     console .log("Super, moi aussi j'adore le citron!")
+// }
+// let name = prompt("quel est ton nom?");
+// if(name.toLowerCase()=="wachani"){
+//     console.log("Bienvenue sur ce site")
+// }
+// let surname = "norhen";
+// if (surname.toLowerCase()=="norhen"){
+//     console.log("Bonjour,Norhen")
+// }
+// let age = "26";
+// if (age =="26") {
+//     console.log(" Voici le dossier d'inscription")
+// }
+// let like= prompt("Aime tu le chocolat?");
+
+// if (like.toLowerCase()=="oui") {
+//     console.log("Alors, je vais te faire un gateau au chocolat.")
+// } else if (like.toLowerCase()=="non"){
+//     console.log( "Dommage pour toi tu sais pas ce que tu manques!")
+// } else {
+//     console.warn( "Réponds par oui ou par non.")
+//}
+
+// let list=["romain", "orane","clementine","sophia","matthias","gwendoline","bastien"];
+// console.log("Voici les élèves de la classe :");
+// list.forEach(function(apprenant){
+//     console.log(apprenant)
+// });
+// list.forEach(apprenants => {
+//     console.log(apprenants)
+// });
+// let chiant=prompt("On peux adopter un chien st'plais?")
+
+// while (chiant.toLowerCase()!= "oui") {
+//     chiant= prompt("je veux un chiot stp,stp,stp!")
+// }
+// console.log("Merci, je vais bien m'en occuper! je t'aime");
+
+// let title = document.querySelector("h1");
+// console.log (title)
+// let parag = document.querySelectorAll("p")[2];
+// console.log(parag)
+// let list= document.querySelector("li");
+// console.log(list)
+
+// document.querySelectorAll("li")[0].classlist;
+// console.log("li");
+// document.querySelectorAll("li")[0].classList.add("Masuperclasse");
+// document.querySelectorAll("li")[1].classList.add("MSC");
+// document.querySelectorAll("li")[2].classList.add("MybestClass");
+// document.querySelector("p").classList.add("firstParagrap");
+// document.querySelector("p").classList.add("firstPara");
+// document.getElementById("p1").style.fontSize="larger"
+
+
+
+<!DOCTYPE html>
+<html lang="fr">
+    <!--voici ma première page web-->
+<head>
+    <meta charset="UTF8">
+    <link rel="stylesheet"href="./css/style.css">
+    <title>Mon HTML du 14 au 18 Octobre</title>
+</head>
+
+<body class="bg-blue"> 
+
+<header>
+    <nav>
+        <ul>
+            <li><a href="./accueil.html">Accueil</a></li>
+            <li><a href="./formulaire.html">Formulaire</a></li>
+            <li><a href="./Évènements.html">Évenements</a></li>
+            <li><a href="./lien.html">Lien</a></li>
+        </ul>
+    </nav>
+</header><br>
+<main>
+    <h2>Accueil</h2>
+    <p>ici , notre joli accueil</p><br>
+    <div class="form">
+        <h2 >Formulaire </h2>
+        <p>Ici, notre joli formulaire</p>
+        <form action="./valid.html">
+            <label for="firstname">Votre prénom:</label>
+            <input type="text" name="firstname"><br>
+            <label for="name">Votre nom:</label>
+            <input type="text" name="name"><br>
+            <label for="">Votre métier:</label>
+            <input type="text" name=""><br>
+            <label for="age">Votre âge:</label>
+            <input type="number" name="age" min="5"><br>
+            <label for="passeword">Votre mot de passe:</label>
+            <input type="password" name="passeword"><br>
+            <label for="radio">Votre genre:</label><br>
+            <input type="radio" name="genre">Femme<br>
+            <input type="radio" name="genre">Homme<br>
+            <input type="radio" name="genre">Loup<br>
+            <label for="date">Date du jour :</label>
+            <input type="date"  name="date"><br>
+            <label for="Children">Nombre d'enfants:</label>
+            <select name="Children">
+                <option value="0">0</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3+</option>
+            </select><br>
+            <input type="submit">
+        </form>
+    </div>
+    
+    <h2>Évenements</h2>    
+    <p>Ici,notre joli évènement</p>
+    <h2>Lien</h2>
+    <p>Ici, notre joli lien</p>
+    <p><a href="http://www.google.com" target="_blank"><img src="./images/google.png" alt="Google" width="100" height="42" border="0"</a></p> 
+    <p><a href="https://www.it-akademy.fr/"><img src="./images/it-akademy.webp"alt="it-akademy"width="100" height="42" border="0"></a></p>           
+</main>
+<footer>
+    <h3>Coordonnées</h3>
+    <p>It Akademy Centre Confluence </p>
+    <h1 class="red"> Lorem</h1>
+    <p class="red">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ut quia aut consectetur animi optio quae excepturi obcaecati dicta porro nesciunt. Tempore consequuntur eos iste distinctio possimus soluta consequatur, libero alias?</p>
+    <p>11 passage panama 69002 Lyon </p>
+    <p>Norhen Wachani</p>
+    <h1 class="border"> Lorem</h1>
+</footer>
+</body>
+</html>
+
+
+
+
+<!DOCTYPE html>
+<html lang="fr">
+    <!--Mon formulaire-->
+<head>
+    <meta charset="UTF-8">
+    <title>Mon Formulaire</title>   
+</head>
+<body>
+<h3>Formulaire d'acceptation</h3>
+<form action="./valid.html">
+    <label for= "name">Votre Nom de Clan:</label>
+    <input type="text" name="name"><br>
+    <label for="species">Votre espéces:</label><br>
+    <input type="checkbox" name="species1" value="werelion"> Je suis un leon <br>
+    <input type="checkbox" name="species2" value="werewolf"> Je suis un lycan <br>
+    <input type="checkbox" name="species3" value="tigerwere"> Je suis un tiger <br>
+    <label for="radio">Votre sexe:</label><br>
+    <input type="radio" name="genre">Alpha<br>
+    <input type="radio" name="genre">Beta<br>
+    <input type="radio" name="genre">Oméga<br>
+    <label for="date">Date de naissance:</label>
+    <input type="date"name="date"><br>
+    <label for="taille">Votre Taille: en cm</label>
+    <div class="slidecontainer">
+        <input type="range" min="100" max="250" value="100" class="slider" id="myRange">
+    </div>
+    <input type="submit">
+     
+</form>   
+</body>
+</html>
+© 2019 GitHub, Inc.

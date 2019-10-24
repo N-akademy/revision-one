@@ -1,0 +1,35 @@
+main{
+    color: gray;
+    font-size: 50px;
+    text-align: center;
+    text-decoration:none;
+   
+}
+#title{
+    color: dodgerblue;
+    font-variant-caps: small-caps;
+    
+}
+#modified-title{
+    color:teal;
+    font-variant-caps: titling-caps;
+    background-color: rgb(148, 204, 198);
+}
+ul{
+    list-style-image:"none"
+}
+.list-elements{
+    text-decoration: none;
+    font-variant-caps: small-caps;    
+    color:teal;
+    border-radius: 20% 3px black;
+    background-color: lightslategray;
+    list-style-type:none
+   
+}
+#p1{
+    color: indianred;
+}
+#p2{
+    color: lawngreen;
+}
