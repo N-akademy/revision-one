@@ -1,6 +1,6 @@
 main{
     color: gray;
-    font-size: 50px;
+    font-size: 40px;
     text-align: center;
     text-decoration:none;
    
@@ -10,15 +10,17 @@ main{
     font-variant-caps: small-caps;
     
 }
-#modified-title{
-    color:teal;
-    font-variant-caps: titling-caps;
-    background-color: rgb(148, 204, 198);
+p{
+    text-align: left;
+}
+.modified-body{
+    
+    background-color:cyan
 }
 ul{
     list-style-image:"none"
 }
-.list-elements{
+li{
     text-decoration: none;
     font-variant-caps: small-caps;    
     color:teal;

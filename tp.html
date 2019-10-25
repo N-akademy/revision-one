@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Exercices</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<Main>
+<h2 id="title">Micro TP2</h2>
+    <p>Vous allez devoir créer un event listener qui permettra, quand la souris passe sur un ul, de lui appliquer du CSS. Lorsque la souris quitte cet élément, vous devrez rendre l'état d'origine de cet élément. (Par exemple : la souris passe dessus ==> tout est en vert. La souris quitte l'élément ==> tout redevient normal)</p>
+
+    <ul class="clickandChange">
+        <li >Accueil</li>
+        <li>Description</li>
+    </ul>
+    <p>TP2 Correction
+        //let ul = document.querySelector("ul");
+        <br>
+        // ul.addEventListener("mouseover", () => { <br>
+        // ul.classList.add("ul-bgcolor");<br>
+        // });<br>
+        // ul.addEventListener("mouseout", () => {<br>
+        // ul.classList.remove("ul-bgcolor");<br>
+        // });<br>
+        </p>
+<h2 id="title">Micro TP3</h2>
+    <p>Vous allez devoir faire en sorte de créer par exemple deux button qui devront, au clic, CACHER une balise, ou la faire réapparaître au nouveau clic. Chaque bouton permet de cacher/ faire réaparraître un p différent.</p>
+    <p>
+        // TP3 Correction <br>
+        // document.querySelectorAll("button")[1].addEventListener("click", () => { <br>
+        //     document.querySelectorAll("p")[0].classList.toggle("p-disappear");<br>
+        // });<br>
+        // document.querySelectorAll("button")[2].addEventListener("click", () => { <br>
+        // document.querySelectorAll("p")[2].classList.toggle("p-disappear");<br>
+        // });<br>
+    </p>
+
+<h2 id="title">TP4</h2>
+    <p>Vous allez devoir faire en sorte, lors d'un clic sur un élément spécifique (genre un button), de changer la couleur d'écriture de TOUS les éléments de votre HTML en rouge (ou bleu, ou comme vous voulez). Lorsque l'utilisateur clique à nouveau dessus, les couleurs redeviennent comme avant.</p>
+
+    <p>
+       
+    // TP4 Correction <br>
+    // document.querySelector("#myButton").addEventListener("click", () => { <br>
+    //     document.querySelector("body").style.setProperty("color", "yellow");<br>
+    // }) <br>
+    </p>
+
+<h2>// Git / GitHub</h2>
+    <p>
+    0) Aller dans notre dossier contenant notre projet - OK <br>
+    1) Initialiser un repo local (vide) - OK <br>
+    2) Ajouter les fichiers/dossiers que l'on veut envoyer - OK <br>
+    3) Sauvegarder nos modifications pour être prêts à envoyer notre repo local sur le repo distant et indiquer les modifications faites - OK <br>
+    4) Indiquer où on veut envoyer notre repo local - OK <br>
+    5) Envoyer notre repo local sur notre repo distant - OK <br>
+    
+    // Commandes Git <br>
+    /*
+        Vérifier si Git est installé : 'git'   ===> Si la liste des commandes Git s'affiche, alors Git est installé. <br>            
+        Initialiser un repo local vide : git init <br>
+        
+        Voir l'état de notre repo local : git status (à spammer !) <br>
+        
+        Ajouter des fichiers/dossiers à notre repo local : git add FICHIER <br>
+        
+        Indiquer qui va push : <br>
+            - git config user.name "votre name" <br>
+            - git config user.email "votre email"<br>
+        
+        Sauvegarder nos modifications et mettre un message : git commit -m "first commit" <br>
+        
+        Lister les remotes créées dans ce dossier : git remote <br>
+        
+        Ajouter une remote : git remote add origin nomDeLUrl<br>
+        
+        Supprimer une remote : git remote rm nomDeLaRemote<br>
+        
+        Envoyer notre repo local : git push origin nomDeLaBranch<br>
+    </p>
+
+<h2>COURS JavaScript</h2>   
+    
+    <p>// Pour charger un fichier javascript : en commentaire<br>
+    <!-- <script src="js/script.js"></script> -->
+    
+    // Permet d'afficher un message.<br>
+    console.log("Le JavaScript, c'est génial !");<br>
+    
+    // Créer une variable en JS : <br>
+    let fruit = "citron";<br>
+    // Pour modifier le contenu d'un let :<br>
+    fruit = "pomme";<br>
+    /!\ ATTENTION : une variable ne peut pas être redéclarée /!\<br>
+    
+    // Créer une constante en JS : <br>
+    const vegetable = "carotte";<br>
+    /!\ ATTENTION : une constante ne peut ni être redéclarée, ni être modifiée /!\<br>
+    
+    // Afficher le contenu d'une variable :<br>
+    console.log(votreVariable);<br>
+    
+    // Créer un array :<br>
+    const list = [];<br>
+    /!\ Attention : dans un array, on commence à compter à partir de 0. Le second élément d'un array aura pour clef : 1 /!\<br>
+    
+    // Afficher une donnée spécifique d'un array (par exemple, le premier) :<br>
+    console.log(list[0]);<br>
+    
+    // Supprimer le deuxième élément d'un array :<br>
+    list.splice(1, 0)<br>
+    
+    // Concaténer une variable avec une string :<br>
+    let fruit = "citron";<br>
+    console.log(`Mon fruit préféré est : ${fruit}`);<br>
+    
+    
+    
+    
+    ////////////////////////////////// CONDITIONS <br>
+    
+    // Cette condition permet de vérifier l'égalité (ou non) d'une variable. Par exemple, si une variable est égale à "rouge", alors on exécutera une action.
+    let color = "rouge";<br>
+    
+    if(color == "rouge") {<br>
+        console.log("La couleur est bien rouge !");<br>
+    }<br>
+    
+    // Variante qui permet de dire SINON SI :<br>
+    if(color == "rouge") {<br>
+        console.log("Cette robe est bien rouge !");<br>
+    } else if(color == "bleu") {<br>
+        console.log("Finalement, cette robe est bleue");<br>
+    }
+    
+    // A nouveau, pour désigner une réponse qui n'est pas dans un if ou un elseif, nous avons ELSE, pour dire SINON :<br>
+    let color = "blanc"<br>
+    
+    if(color == "blanc") {<br>
+        console.log("Le blanc, c'est chouette !");<br>
+    } else if(color == "noir") {<br>
+        console.log("Le noir, c'est classe !");<br>
+    } else {
+        console.log("Aucune des deux valeurs n'a été choisi, on va considérer que tu aimes le gris.");<br>
+    }
+    
+    
+    //////////////////////////////// BOUCLES<br>
+    
+    for() {<br>
+        <br>
+    }<br>
+    
+    foreach();<br>
+    
+    while();<br>
+    
+    
+    //////////////////////// CIBLER UN OU DES ÉLÉMENTS DANS LE DOM :<br>
+    Pour sélectionner tout le DOM : taper document dans votre console (ou dans votre JS)<br>
+    
+    /* Un ID */ : document.getElementById("nom de l'ID");<br>
+    /* Une class */ : document.getElementsByClassName("nom de la class");<br>
+    
+    Seconde méthode générale<br>
+        - /* Un ID */ : document.querySelector("#nom de l'ID");<br>
+        - /* Une class */ : document.querySelector(".nom de la class");<br>
+        - /* Une balise en particulier */ : document.querySelector("nom de l'élément recherché");<br>
+    /!\ ATTENTION : cette méthode ne permet de sélectionner que le premier élément, que ce soit en ciblant une class ou un élément qui existe en plusieurs exemplaires (plusieurs p, plusieurs li, etc) /!\<br>
+    Pour palier ceci ==> <br>
+        document.querySelectorAll(".nom de la class"); ==> <br>
+            // Cela donnera un array, à vous de sélectionner le bon élément.<br>
+    
+    
+    //// Event listeners<br>
+    
+    // Permet, au clic sur l'élément qui porte l'ID "title", de pouvoir alterner entre ajout / suppression d'une classe que l'on appliquera sur un p. Cette classe se nomme "modified-title"<br>
+    document.querySelector("#title").addEventListener("click", () => {<br>
+        document.querySelectorAll("p")[0].classList.toggle("modified-title");<br>
+    });<br>
+    </p>
+</Main>
+    <script src="js/script.js"></script>
+</body>
+</html>

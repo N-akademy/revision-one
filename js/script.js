@@ -1,28 +1,13 @@
 
+let click = document.querySelector(".clickandChange");
 
-// document.querySelector("#title").addEventListener("click",function(){
-//     console.log("Mon Eventlistener a fonctionné!")
-// })
+click.addEventListener("mouseover",function(){
+    document.querySelector("body").classList.add("modified-body")
+})
 
-
-
-// document.querySelector("#title").addEventListener("click", () => {
-//     document.querySelector("#title").classList.add("#modified-title");
-// })
-
-// let button = document.querySelector("button");
-// button.addEventListener("click", () => {
-//     console.log(document.querySelector("input").value);
-// });
-    
-// document.querySelector("text").value
-
-
-// document.getElementById("#onclick").addEventListener("click",function(){
-//     document.getElementById("body").style.color = "blue"
-// });
-
-
+click.addEventListener("mouseout",function(){
+    document.querySelector("body").classList.remove("modified-body")
+})
 
 
 
